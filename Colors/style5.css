@@ -1,0 +1,72 @@
+#first {
+    color: red;
+    background-color: yellow;
+}
+
+#second {
+    color: green;
+    /* you may also use hex (#rrggbb)color code */
+    /* #rrggbb is similar to rgb code ...
+    Example : rgb(255, 255, 255) = #(ff ff ff) and ff is 255 in hexadecimal */
+    background-color: thistle;
+    /* rgba */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* red green blue alpha*/
+    /* hsl */
+    background-color: hsl(240, 60, 0);
+    /* hue saturation lightness */
+    /* hue ==> 0 = red, 120 = blue, 240 = green */
+    /* hsla */
+    background-color: hsla(480, 50%, 50%, 0.2);
+    /* hue saturation lightness alpha*/
+    /* hue ==> 0 = red, 120 = green, 240 = blue (no value limit, it cycles (360)*/
+}
+
+#thirdPara {
+    /* gradient */
+    /* 1) Linear gradient => l-r, r-l, t-b or b-t (directional)*/
+    background: linear-gradient(red, yellow);
+    /* t-b default */
+    background: linear-gradient(to right, red, yellow);
+    /* l-r */
+    background: linear-gradient(to left, red, yellow);
+    /* r-l */
+    background: linear-gradient(to top, red, yellow);
+    /* b-t */
+    background: linear-gradient(to top left, red, yellow);
+    /* br-tl */
+    background: linear-gradient(to top right, red, yellow);
+    /* bl-tr */
+    background: linear-gradient(to bottom left, red, yellow);
+    /* tr-bl */
+    background: linear-gradient(to bottom right, red, yellow);
+    /* tl-br */
+    background: linear-gradient(120deg, red, yellow);
+    /* angular */
+    /* repeated linear gradient */
+    background: repeating-linear-gradient(red, yellow 10%, green 50%);
+    /* 2) Radial gradient => radial */
+    background: radial-gradient(circle, violet 10%, indigo 10%, blue 10%, green, yellow, orange, red);
+    background: radial-gradient(closest-side at 50%/*x*/50%/*y*/, red , yellow); /* 50% 50% => center */
+    background: radial-gradient(farthest-side at 10%/*x*/10%/*y*/, red , yellow); /* farthest => pattern gets stretched */
+    background: radial-gradient(closest-corner at 10%/*x*/10%/*y*/, red , yellow);
+    background: radial-gradient(farthest-corner at 10%/*x*/10%/*y*/, red , yellow);
+
+    /* repeating radial gradient */
+    background: repeating-radial-gradient(red , yellow 50px, green 10%);
+}
+
+#container{
+    color: green;
+    font-weight: bold;
+}
+
+#container a{
+    /* errors */
+    color: red;
+    background-color: currentColor;
+    
+    /* no errors */
+    color: currentColor;
+    background-color: red;
+}

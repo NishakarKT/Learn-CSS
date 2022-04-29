@@ -1,0 +1,29 @@
+table, td, th{
+    border: 1px solid black;
+}
+
+table{
+    border-spacing: 0px;
+    border-spacing: 0px/*column-gap*/ 10px/*row-gap*/;
+
+    border-collapse: collapse; /* like a grid table <-> single border */
+    border-collapse: separate; /* default */
+
+    empty-cells: show; /* default */
+    empty-cells: hide;
+
+    width: 600px;
+    table-layout: fixed; /* default */
+    table-layout: auto; /* if data increases, table width may adjust despite of it being hard coded */
+}
+
+td, th{
+    vertical-align: top;
+    vertical-align: middle; /* default */
+    vertical-align: bottom;
+}
+
+caption{
+    caption-side: top; /* default */
+    caption-side: bottom;
+}

@@ -1,0 +1,5 @@
+/* remember in the footer, when I used to have 4 different logo "images" for the logos ???, it puts load on server, to fetch all the four images, so we use the concept of the icon fonts, where we store all of them in a single file */
+
+p a{
+    color: green;
+}

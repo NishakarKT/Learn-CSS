@@ -1,0 +1,7 @@
+::marker{ /* effects all li items */
+    color: green;
+}
+
+ol li::marker{ /* effect specific li items */
+    color: yellow;
+}

@@ -1,0 +1,35 @@
+#first{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    /* transition property : on what element exactly should the changes be reflected */
+    /* transition-property: all; */
+    /* transition-property: border-radius; */
+    transition-property: border-radius, background-color;
+
+    transition-duration: 10s/*1st*/, 3s/*2nd*/;
+
+    /* transition timing function */
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: step-start;
+    transition-timing-function: step-end;
+    transition-timing-function: steps(5, start);
+    transition-timing-function: steps(5, end);
+    transition-timing-function: cubic-bezier(1.0, 0.1, 1.0, 0.1);
+    /* transition delay */
+    transition-delay: 2s;
+
+    /* shorthand */
+    transition: border-radius 5s ease 2s,background-color 1s;
+
+}
+#first:hover{
+    background-color: hotpink;
+    border-radius: 50%;
+}
+
+/* transition can be used in hover, active, focus, media queries etc... */

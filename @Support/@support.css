@@ -1,0 +1,13 @@
+@supports(display: flex) or (display: -webkit-flex){
+    #container{
+        display: flex;
+    }
+}
+@supports not(display: flex){
+    #container{
+        display: block;
+    }
+}
+
+/* above code implies, that only if a browser supports the feature "display: grid", apply the block css */
+/* also called conditional css */

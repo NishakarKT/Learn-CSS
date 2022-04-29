@@ -1,0 +1,28 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-snap-type: both mandatory;
+    scroll-snap-type: x proximity; /* works only when the height difference is too much */
+    scroll-snap-type: y proximity; /* works only when the width difference is too much */
+}
+
+.paras{
+    font-size: 2.7rem;
+    margin: auto;
+    scroll-snap-align: start;
+    scroll-snap-align: end;
+    scroll-snap-align: center;
+}
+
+#para1{
+    background-color: yellow;
+}
+#para2{
+    background-color: green;
+}
+#para3{
+    background-color: magenta;
+}
+#para4{
+    background-color: cyan;
+}

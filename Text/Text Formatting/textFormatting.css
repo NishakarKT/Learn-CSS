@@ -1,0 +1,10 @@
+#firstPara{
+    border: 2px dashed black;
+    font-size: 50px;
+    text-align: justify; /* justify => same spacing on bot sides */
+    text-align-last: right; /* for last line */
+    letter-spacing: 10px; /* space between letters */
+    word-spacing: 40px; /* space between words */
+    text-transform: capitalize; /* lowercase/uppercase/capitalize(1st letter of all words) */
+    text-indent: 500px; /* first line of the para */
+}

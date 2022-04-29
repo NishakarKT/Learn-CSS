@@ -1,0 +1,11 @@
+/* calc used for mathematical calculations */
+/* operators applicable : 
+1) +
+2) -
+3) *
+4) /
+*/
+
+p{
+    width: calc(100vw/4);
+}

@@ -1,0 +1,6 @@
+span{
+    border: 2px solid black;
+    /* border breaks for different html breaks */
+    box-decoration-break: slice; /* default */
+    -webkit-box-decoration-break: clone;
+}

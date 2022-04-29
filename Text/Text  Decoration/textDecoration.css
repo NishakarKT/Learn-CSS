@@ -1,0 +1,45 @@
+/* TEXT DECORATION */
+/* 1) text-decoration-line */
+/* 2) text-decoration-color */
+/* 3) text-decoration-style */
+
+/* SHORT HAND */
+/* text-decoration: text-decoration-line text-decoration-color text-decoration-style; */
+
+#firstPara{
+    font-size: 50px;
+}
+
+#firstSection{
+    text-decoration-line: none;
+    text-decoration-line: underline;
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+}
+
+#secondSection{
+    text-decoration-line: line-through;
+    text-decoration-color: red; /* color of the line */
+}
+
+#thirdSection{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: double;
+    text-decoration-style: solid;
+
+    /* text decoration thickness */
+    text-decoration-thickness: 10px; /* thickness of line */
+
+    /* text underline offset */
+    text-underline-offset: 20px; /* distance between text and the line */
+    text-underline-offset: -5.5px; /* distance between text and the line */
+}
+
+
+#secondPara{
+    /* shorthand */
+    text-decoration: underline #10ff90 dotted;
+}

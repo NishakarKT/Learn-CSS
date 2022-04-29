@@ -1,0 +1,13 @@
+p{
+    width: fit-content;
+    margin: 100px auto;
+}
+p::after{
+    /* content: attr(class); */
+}
+p:hover::after{
+    content: attr(class);
+}
+
+/* attr() function returns the value of an attribute */
+/* can be used with javascript */

@@ -1,0 +1,20 @@
+p {
+    background: linear-gradient(to right, red, yellow, green), url("https://images.unsplash.com/photo-1617910565910-0675a24056f1?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-repeat: no-repeat;
+    /* blend modes */
+    background-blend-mode: normal;/* default */
+    background-blend-mode: screen;
+    background-blend-mode: overlay;
+    background-blend-mode: darken;
+    background-blend-mode: hard-light;
+    background-blend-mode: soft-light;
+    background-blend-mode: color-burn;
+    background-blend-mode: color-dodge;
+    background-blend-mode: difference;
+    background-blend-mode: exclusion;
+    background-blend-mode: luminosity;
+    background-blend-mode: lighten;
+    background-blend-mode: hue;
+    background-blend-mode: multiply;
+    background-blend-mode: saturation;
+}

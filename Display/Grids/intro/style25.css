@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    /* making 3 columns with specified widths */
+    grid-template-columns: 150px 250px 100px; 
+    /* making 3 columns with specified widths, 1fr(fraction) = 1 part of width */
+    grid-template-columns: 1fr 4fr 3fr; 
+    /* making 2 columns with specified widths, and in between space is allocated to mid column */
+    grid-template-columns: 150px auto 100px; 
+    /* for n columns, we have repeat() */
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr); /* equal width columns */
+
+    /* grid-gap */
+    width: fit-content;
+    grid-gap: 10rem;
+    grid-row-gap: 3rem;
+    grid-column-gap: 5rem;
+    grid-gap: 5rem/*y*/ 4rem/*x*/;
+}
+.container .items{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+}

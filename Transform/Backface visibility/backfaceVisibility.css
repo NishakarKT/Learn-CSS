@@ -1,0 +1,14 @@
+div{
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    background-color: grey;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    transform: perspective(800px) rotateX(30deg);
+    backface-visibility: visible; /* default */
+    backface-visibility: hidden;
+}

@@ -1,0 +1,19 @@
+#Ulist{
+    border: 2px solid black;
+    list-style-type: square;
+    /* list-style-type: none; */
+
+    list-style-position: outside; /* default */
+    list-style-position: inside;
+
+    list-style-image: url("bullet.png");
+
+    /* short hand */
+    list-style: none/*type*/ inside/*posiiton*/ url("bullet.png")/*image*/;
+}
+
+#Olist{
+    list-style-type: lower-roman;
+    list-style-type: "wow: ";
+    list-style-type: "\2133 : ";
+}

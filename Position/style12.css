@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    display: inline-block;
+    border: 2px solid black;
+    height: 3000px;
+}
+.box{
+    display: inline-block; /* block to inline */
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 2px;
+}
+#box1{
+    position: fixed; /* fixed position relative to the browser window */
+    bottom: 4px;
+    right: 4px;
+}
+#box2{
+    position: absolute; /* further instructions come to effect relative to the parent position (top-left-corner of the container) */
+    top: 50px;
+    left: 50px;
+}
+#box3{
+    position: relative; /* further instructions come to effect relative to the initial position */
+    top: 50px;
+    left: 100px;
+    /* gaps are not filled in relative, but absolute */
+}
+#box4{
+    position: sticky; 
+    top: 10px;
+}

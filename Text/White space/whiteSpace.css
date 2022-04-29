@@ -1,0 +1,12 @@
+#firstPara{
+    font-size: 2rem;
+    border: 2px solid black;
+    width: 30%;
+    margin: auto;
+
+    /* white space */
+    white-space: nowrap; /* overflow */
+    white-space: pre; /* exact printing as in html (with spaces and indents) */
+    white-space: pre-line; /* prints exact lines as in html ,nowrap doesn't work, omits extra spaces */
+    white-space: pre-wrap; /* no wrap doesn't work, extra spaces are not omitted */
+}

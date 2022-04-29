@@ -1,0 +1,20 @@
+/* 1 */
+h1 {
+    color: yellow;
+}
+
+/* 2 */
+.headingClass {
+    color: green !important; /* highest priority */
+}
+
+/* 3 */
+#headingId {
+    color: blue;
+}
+
+/* 4 => styling in the html tag, using style="" */
+
+/* PRIORITY: 4 > 3 > 2 > 1 */
+
+/* we  can use !important on a attribute, to max it priority */

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e9dbe4;
+}
+.container{
+    color: red;
+    width: 900px;
+    border: 2px solid black;
+    margin: 33px auto; /* "auto" centralizes container in x axis (left/right) */
+}
+.item{
+    color: blue;
+    background-color: rgb(238, 222, 202);
+    border: 3px solid black;
+    margin: 10px 20px;
+}
+
+#fruits{
+    float: left;
+    width: 28%;
+}
+#computers{
+    float: left;
+    /* float: right; */
+    width: 28%;
+}
+#stationaries{
+    /* float: left; */
+    /* id we don't float this element, other floating elements may overlap... so we use clear */
+    /* clear: left; 
+    clear: right;  */
+    /* clear: left; protects from all the left floating elements and vice versa... */
+    clear: both; /* protects from both */
+    width: 100%;
+}
+p, h2{
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+    text-align: start;
+    text-align: end;
+    text-align: center;
+}

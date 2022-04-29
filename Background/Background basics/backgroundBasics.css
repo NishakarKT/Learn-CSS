@@ -1,0 +1,60 @@
+#first {
+    color: red;
+    background-color: turquoise;
+    height: 25px;
+    width: 200px;
+    /*border on specific sides */
+    border-left: 10px solid red;
+    border-right: 20px solid green;
+    border-top: 25px solid yellow;
+    border-bottom: 30px solid thistle;
+    /* corner specific border radius */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+}
+
+#second {
+    color: yellow;
+    height: 500px;
+    width: 300px;
+    background-image: url("https://neilpatel.com/wp-content/uploads/2017/08/colors.jpg");
+    /* open image in new tab and copy-paste the link */
+    /* if image is smaller than the block, it gets repeated */
+    /* To stop the repetitions */
+    /* repetitions only in x */
+    background-repeat: repeat-x;
+    /* repetitions only in y */
+    background-repeat: repeat-y;
+    /* repetitions */
+    background-repeat: repeat;
+    /*no repetitions*/
+    background-repeat: no-repeat;
+    /* space between repeated images */
+    background-repeat: space;
+    /* stretched images */
+    background-repeat: round;
+    /*background position*/
+    /* just like x and y coordinates */
+    background-position: center right;
+    background-position: 20px right;
+    /* background-position: (top/center/bottom) (left/center/right)*/
+}
+
+/* Using span tag to style a particular section of the element */
+p span {
+    background-color: orange;
+}
+
+/* Multiple backgrounds */
+
+#multipleBgs {
+    background-image: url("https://neilpatel.com/wp-content/uploads/2017/08/colors.jpg"), url("https://neilpatel.com/wp-content/uploads/2017/08/colors.jpg");
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+
+    /* shorthand */
+    background: yellow/*color*/ url()/*image*/ no-repeat/*repeat*/ center/*X*/ center/*Y*/ / cover /*size*/;
+}

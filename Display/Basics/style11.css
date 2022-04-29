@@ -1,0 +1,21 @@
+.container{
+    display: none;
+    display: block; /* makes the element a block one */
+    display: inline-block;
+}
+
+.container li{
+    display: inline; /* makes the element an inline one */
+    border: 2px solid black;
+}
+
+/* "width, padding, margin top-bottom", doesn't work on span\anchor as they are text related tags, so you have to make it a block element for setting its width */
+span{
+    display: block;
+    display: list-item; /* just like li, now list attributes are applicable */
+    border: 2px solid black;
+    width: 200px;
+    margin: 10px;
+}
+
+/* display inline-block ==> properties of span, functions of block */

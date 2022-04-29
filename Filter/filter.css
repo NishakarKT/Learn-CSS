@@ -1,0 +1,16 @@
+img {
+    filter: opacity(0.5);
+    filter: blur(2px);
+    filter: brightness(200%);/* 100% ==> normal */
+    filter: contrast(150%);
+    filter: drop-shadow(0 0 10px black);/* just like box shadow */
+    filter: grayscale(100%); /* 0% ==> normal */
+    filter: hue-rotate(480deg); /* default for 360n deg */
+    filter: invert(100%); /* 0-100% */
+    filter: saturate(500%);
+    filter: sepia(100%);
+    filter: none;
+
+    /* multiple effects */
+    filter: blur(1px) contrast(159%) grayscale(50%);
+}

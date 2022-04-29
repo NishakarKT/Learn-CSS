@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+.navBar{ /* targetting ul in navBar */
+    color: blueviolet;
+    background-color: thistle;
+    border-radius: 15px;
+}
+.navBar ul{
+    overflow: auto; /* when we float elements, it overflows from the parent container */
+}
+.navBar li{
+    float: left;
+    list-style: none; /* removing bullets from the unordered lists */
+    margin: 5px 5px;
+}
+.navBar li a{
+    margin: 10px 10px;
+    text-decoration: none; /* to remove the underline after making hypertext */
+}
+.navBar li a:hover{
+    color: red;
+    background-color:  yellow;
+}
+.navBar input{
+    float: right;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 3px;
+}

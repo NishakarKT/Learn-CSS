@@ -1,0 +1,35 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+p {
+    text-align: center;
+    margin: 10px 100px;
+    padding: 10px;
+    border: 20px solid black;
+    /* border image source */
+    border-image-source: url("https://images.unsplash.com/photo-1617904955291-07dd9ff6f0a3?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    /* border image slice */
+    border-image-slice: 20 10;
+    /* border image repeat */
+    border-image-repeat: repeat;/* some irregularities */
+    border-image-repeat: stretch;/* stretched image */
+    border-image-repeat: round;/* proper border */
+    border-image-repeat: space;
+    border-image-repeat: repeat/*x*/
+    space/*y*/
+    ;
+    /* border image outset */
+    border-image-outset: 10px;
+    /* image width */
+    border-image-width: 2px;
+
+    /* linear gradient as border image */
+    border-image: linear-gradient(red, blue) 27/ 35px;
+
+    /* shorthand */
+    /* border-image: source / slice / width / outset repeat; */
+
+    /* google search  : border image generator */
+}

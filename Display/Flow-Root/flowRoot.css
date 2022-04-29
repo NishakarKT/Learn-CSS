@@ -1,0 +1,21 @@
+#container{
+    border: 2px solid black;
+    /* display: flow-root; */
+}
+
+p{
+    width: 30%;
+    background-color: yellow;
+    float: left; /* after floating left, div shrinks */
+    /* to counter this, we have flow root */
+}
+
+/* earlier solutions */
+#container{/* not recommended, as in some browsers, even the scroll bars pop up */
+    overflow: auto;
+}
+#container::after{ /* too many lines of code */
+    content: "";
+    display: block;
+    clear: both;
+}

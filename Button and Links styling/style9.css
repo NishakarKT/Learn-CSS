@@ -1,0 +1,55 @@
+*{
+    box-sizing:border box;   
+}
+body{
+    background-color: rgb(182, 166, 143);
+}
+h3{
+    text-align: center;
+}
+.container{
+    color: rgb(206, 245, 148);
+    background-color:rgb(68, 48, 87);
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+}
+a{
+    text-decoration: none; /* removes underline in the buttons */
+    color: black;
+}
+a:link{
+    color: chartreuse;
+}
+a:hover{ /* when pointer hovers over the element */
+    color: red;
+    background-color: yellow;
+}
+a:visited{
+    color: purple;
+    background-color: white;
+}
+a:active{
+    color: yellow;
+    background-color: black ;
+}
+.btn:hover{ /* when pointer hovers over the element */
+    color: red;
+    background-color: yellow;
+}
+.btn:active{
+    color: yellow;
+    background-color: black ;
+}
+.btn{
+    color: cornflowerblue;
+    background-color: #dffac4;
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer; /* mouse pointer becomes the finger pointer on the button */
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+}

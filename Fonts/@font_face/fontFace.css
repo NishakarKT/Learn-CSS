@@ -1,0 +1,10 @@
+p{
+    font-size: 2rem;
+    font-family: Redressed;
+}
+
+@font-face{
+    font-family: Redressed;
+    src: url("Redressed-Regular.ttf");
+}
+/* con: puts a load on the server ===> laggy */

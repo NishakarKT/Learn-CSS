@@ -1,0 +1,21 @@
+body{
+    background-color: turquoise;
+}
+
+.container{
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+}
+:root{
+    --box_color: red; /* declaring a "Global Variable" */
+}
+.box{
+    --box_color: yellow; /* declaring a "Local Variable" */
+    background-color: var(--box_color);
+    border: 2px solid black;
+    margin: 3vw;
+    height: 20vh;
+    width: 20vw;
+}
+/* as usual, global variables have lower preference as compared to the same local variables */

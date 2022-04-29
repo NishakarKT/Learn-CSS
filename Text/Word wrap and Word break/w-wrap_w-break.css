@@ -1,0 +1,9 @@
+#firstPara{
+    font-size: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 30%;
+    height: fit-content;
+    word-wrap: break-word; /* breaks a word on overflow */
+    word-break: break-all; /* if the last word overflows, word is broken */
+}

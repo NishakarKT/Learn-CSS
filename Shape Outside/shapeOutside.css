@@ -1,0 +1,11 @@
+p{
+    
+}
+img{
+    float: left;
+    width: 30%;
+    clip-path: polygon(40% 0%, 80% 50%, 40% 100%, 0% 50%);
+    /* clears extra space */
+    shape-outside: polygon(40% 0%, 80% 50%, 40% 100%, 0% 50%);
+    shape-margin: 10px;
+}

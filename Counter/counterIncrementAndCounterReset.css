@@ -1,0 +1,33 @@
+/* ************************************************************* */
+/* HOW DOES COUNTER WORK ??? */
+/* counter-reset: myCounter (Counter name) 4 (starting point); */
+/* LOOP */
+/* content: counter(myCounter); */
+/* counter-increment: myCounter (Counter name) 5 (increment by); */
+/* LOOP */
+/* ************************************************************** */
+
+* {
+    font-size: 1.5rem;
+}
+
+body{
+    counter-reset: myCounter1;
+}
+
+h1::before{
+    color: red;
+    content: "Topic " counter(myCounter1) " : ";
+    counter-increment: myCounter1 1;
+    background-color: yellow;
+}
+
+ol{
+    counter-reset: myCounter2; /* reset at each ol */
+}
+
+li::before{
+    color: green;
+    content: counter(myCounter2, lower-roman) ". ";
+    counter-increment: myCounter2 1;
+}

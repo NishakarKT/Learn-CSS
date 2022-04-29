@@ -1,0 +1,7 @@
+/* caret ~ cursor */
+input{
+    font-size: 20px;
+    caret-color: auto; /* default */
+    caret-color: transparent;
+    caret-color: cyan;
+}

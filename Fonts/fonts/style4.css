@@ -1,0 +1,39 @@
+/* using web safe fonts */
+
+body {
+    font-size: 50px;
+}
+
+#firstPara {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* "Font Stacking" : if not "verdana", choose "geneva", if not "geneva", choose "tahoma" ... so on ... */
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/* Using web fonts */
+
+/* use google fonts and copy-paste the stylesheet of that font available in font description */
+
+#secondPara {
+    font-family: 'Redressed', cursive;
+    font-size: 50px;
+    /* 50 pixels */
+    /* 1 pixel is 0.26 mm or 1/96 inch */
+    line-height: 10em;
+    /* 'n' em = (n x parent value) px */
+    font-weight: bold; /* fontweight: bolder/lighter workd relative to the parent
+    font-style: italic;
+    fontweight: 400(normal)/700(bold)/900(bolder) */
+}
+
+#thirdPara {
+    font-size: 150%;
+    /* % of font size in parent(body)
+    /* ===> 150% of 20px = 30px; */
+    font-variant: small-caps; /* first letter bigger of each sentence */
+
+    /* shorthand */
+    font: oblique /*style*/ small-caps /*variant*/ bold /*weight*/  1em/5em /*size/line-height*/ 'Redressed', cursive;
+}

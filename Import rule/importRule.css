@@ -1,0 +1,5 @@
+@import "sample.css"; /* accepts only relative paths */
+@import url("sample.css"); /* accepts both relative and absolute paths */
+/* you may also put the address of a css file from some random website */
+@import url("sample.css") print/*media type*/;
+@import url("sample.css") screen and (max-width: 100px);

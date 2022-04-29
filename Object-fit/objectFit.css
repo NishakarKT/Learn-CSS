@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    /* image gets compressed */
+    border: 2px solid black;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: none;
+    /* no stretching, original picture dimensions */
+    object-fit: fill;
+    /* stretches and fill */
+    object-fit: contain;
+    /* to display complete image irrespective of the parent container */
+    object-fit: cover;
+    /* to avoid image distortion */
+
+    /* object position */
+    object-position: left;
+    object-position: right;
+    object-position: top;
+    object-position: bottom;
+    object-position: center;
+}

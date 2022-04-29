@@ -1,0 +1,40 @@
+.box{
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+}
+/* z index works for elements with position != "static" */
+#box1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+    background-color: red;
+}
+#box2{
+    visibility: hidden; /* element removed, space is not */
+    display: none; /* element and space taken by it, both removed */
+    background-color: blue;
+}
+#box3{
+    position: absolute;
+    top:60px;
+    left: 0px;
+    z-index: 20;
+    background-color: yellow;
+}
+#box4{
+    position: absolute;
+    top:120px;
+    left: 0px;
+    z-index: 10;
+    background-color: green;    
+}
+
+table{
+    float: right;
+}
+
+.collapse{
+    visibility: collapse; /* hides a table element */
+}

@@ -1,0 +1,16 @@
+img{
+    clip-path: circle(30%/*radius*/ at 50%/*x*/ 50%/*y*/);
+    /* x and y are radius coordinates 'in' the image */
+    /* problem : outside shape is un-occupiable */
+
+    /* ellipse */
+    clip-path: ellipse(10% 40% at 50% 50%);
+    /* ellipse with horizontal axis = 10%, vertical axis = 40% */
+
+    /* rectangle */
+    clip-path: inset(25% 25% 25% 25%); /* top right bottom left (CW direction) */
+
+    /* polygon */
+    clip-path: polygon(50%/*x*/ 0%/*y*/, 100% 50%, 50% 100%, 0% 50%);
+}
+/* clip path can also be used in div, h, p etc.... */

@@ -1,0 +1,15 @@
+p{
+    background: yellow url("https://images.unsplash.com/photo-1608710316761-8e816d904b1c?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") no-repeat left top / 300px;
+    border: 10px dotted black;
+    padding: 50px;
+
+    background-clip: border-box; /* default */
+    background-clip: padding-box;
+    background-clip: content-box;
+    -webkit-background-clip:  text; /* background behind the text */
+    font-size: 2rem;
+    color: transparent;
+
+    /* we use webkit for unsupported attributes by chrome */
+    /* we use mox for unsupported attributes by firefox */
+}

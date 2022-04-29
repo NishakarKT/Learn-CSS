@@ -1,0 +1,8 @@
+p{
+    padding: 100px;
+    background: url("https://images.unsplash.com/photo-1506480932912-dbbe35e3e516?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDU3fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") no-repeat center center/200px;
+
+    background-origin: border-box; /* background-top matches border-top */
+    background-origin: padding-box; /* background-top matches padding-top */
+    background-origin: content-box; /* background-top matches content-top */
+}

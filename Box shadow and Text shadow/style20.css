@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    border: 2px solid black;
+    height: 30vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .box {
+    font-size: 3vw;
+    height: fit-content;
+    flex-basis: 30vw;
+    text-align: center;
+    border: 2px solid black;
+    margin: 1vh 0.5vw;
+    background-color: yellow;
+    /* text shadow */
+    text-shadow: 3px/*H*/3px/*V*/10px/*blur*/red;
+    /* multiple text shadows */
+    text-shadow: 3px 3px 10px blue, 10px 10px 30px red;
+    /* box shadow */
+    box-shadow: 5px/*x*/10px/*y*/black/*color*/;
+    box-shadow: -5px/*x*/-10px/*y*/20px/* blur-radius */30px/* spread-radius */black/*color*/;
+    box-shadow: inset 3px 5px red;
+    /* inset, sets the effects towards insides */
+    /* multiple shadows */
+    box-shadow: 5px 5px red, 10px 10px blue;
+}

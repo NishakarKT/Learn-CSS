@@ -1,0 +1,6 @@
+/* text orientation works only with the writing mode */
+p{
+    writing-mode: vertical-lr;
+    text-orientation: mixed; /* default */
+    text-orientation: upright;
+}

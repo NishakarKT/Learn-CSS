@@ -1,0 +1,15 @@
+div{
+    width: 30%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: gray;
+    perspective: 800px;
+    perspective-origin: center bottom;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    /* or transform: perspective(800px) rotateX(30deg); */
+    transform: rotateX(30deg);
+}

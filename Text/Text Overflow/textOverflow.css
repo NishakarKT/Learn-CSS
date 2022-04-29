@@ -1,0 +1,12 @@
+#firstPara{
+    border: 2px solid black;
+    font-size: 2rem;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip; /* default */
+    text-overflow: ellipsis; /* "..." instead of cut out sentence */
+    text-overflow: "---"; /* "---" instead of cut out sentence */ /* supported only by firefox */
+}

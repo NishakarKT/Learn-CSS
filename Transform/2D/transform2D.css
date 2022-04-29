@@ -1,0 +1,22 @@
+img {
+    width: 30%;
+    /* transform origin : fixing the origin for transform*/
+    transform-origin: left/*x*/ top/*y*/;
+
+    /* transform */
+    transform: none;/*default*/
+    transform: rotate(30deg);
+    transform: skewX(30deg);
+    transform: skewY(20deg);
+    transform: skew(30deg/*x*/, 20deg/*y*/);
+    transform: translateX(100px);
+    transform: translateY(200px);
+    transform: translate(100px, 200px);
+    transform: scaleX(2);
+    transform: scaleY(1);
+    transform: scale(2, 1);
+    /* transform: matrix(scaleX, skewY, skewX, scaleY, traslateX, translateY) */
+
+    /* shorthand */
+    transform: rotate(360deg) skew(20deg, 30deg) scale(0.3);
+}

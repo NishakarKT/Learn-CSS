@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    /* you have to make a perfect matrix */
+    'navBar navBar navBar .' /* '.' implies, leave that space unoccupied*/
+    'section section section aside'
+    'footer footer footer footer';
+}
+.items{
+    background-color: yellow;
+    border: 2px solid black;
+}
+#navBar{
+    grid-area: navBar;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+}

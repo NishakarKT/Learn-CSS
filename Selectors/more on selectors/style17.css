@@ -1,0 +1,22 @@
+html{
+    font-size: 50px;
+    color: white;
+    background-color: gray;
+}
+.container div p{ /* applies on all p inside div, there may be p , we wanna neglect */
+    color: black;
+    font-weight: bold;
+}
+.container div > p{ /* 'div > p' implies that the css would come to effect only for direct child of div, p */
+    color: yellow;
+    font-weight: bold;
+}
+div + p{/* 'div + p' implies that the css would come to effect only for p, whose "prev" sibling(same level) is div */
+    color: blue;
+    font-weight: bold;
+}
+
+div ~ p{/* 'div ~ p' implies that the css would come to effect for all the "next" p tags (same level/sibling) */
+    color: blue;
+    font-weight: bold;
+}

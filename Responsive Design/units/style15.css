@@ -1,0 +1,25 @@
+html{
+    font-size: 25px;
+}
+.container{
+    text-align: center;
+    font-size: 10px;
+    border: 2px solid black;
+}
+#first{
+    font-size: 10em;
+    width: 100vw; /* 1 vw = 1% of viewport/displayed width */
+    height: 100vh; /* 100vh implies 100% of viewport/displayed height */
+    /* 1em = fontsize set for parent (10 px) */
+    /* 10em = 100px here*/
+    padding: 0.1em; /* here 1em = font-size as it is declared */
+}
+#second{
+    font-size: 5rem; /* same as em, but relative to base html declarations */
+    padding: 3rem; /* relative to base html declarations */
+}
+#third{
+    font-size: 5em;
+    width: 50vmin; /* 50% of minimum of width/height */
+    width: 50vmax; /* 50% of maximum of width/height */
+}

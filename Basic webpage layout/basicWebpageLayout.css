@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, lightcyan, lightpink, lightyellow);
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#navBar ul li{
+    display: inline-block;
+}
+
+#navBar ul li a{
+    display: block; /* so that padding/margin work */
+    padding: 5px;
+    text-decoration-line: none;
+}
+
+#main{
+    float: left;
+    width: 70%;
+}
+
+aside{
+    float: right;
+    width: 20%;
+}
+
+aside img{
+    width: 100%;
+    height: 100px;
+}
+
+footer{
+    clear: both;
+}

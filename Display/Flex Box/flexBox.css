@@ -1,0 +1,132 @@
+/* Flex box is one directional, you can't handle both the rows and  the columns simultaneously */
+/* horizontal axis = main axis */
+/* vertical axis = cross axis */
+/* flexbox elements are called flex items */
+
+#container{
+    display: flex;
+    height: 60vh; /* height must be mentioned to use wrap in column */
+    border: 2px solid black;
+
+    /* flex direction */
+    flex-direction: column; 
+    flex-direction: column-reverse; 
+    flex-direction: row; /* default */
+    flex-direction: row-reverse;
+
+    /* flex wrap */
+    flex-wrap: nowrap; /* default */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    
+    /* flex flow */
+    /* shorthand for flex direction and flex wrap */
+    flex-flow: row wrap;
+
+    /* justify */
+    justify-content: flex-end;
+    justify-content: flex-start; /* default */
+    justify-content: left;
+    justify-content: center;
+    justify-content: space-around; /* equal space "around items" */
+    justify-content: space-evenly; /* equal spaces between items and ends */
+    justify-content: space-between;
+
+    /* align items */
+    align-items: stretch; /* default */
+    align-items: baseline; /* according to base line of texts, irrespective of their font size */
+    align-items: flex-start; /* start in the same direction (not top-left corner) */
+    align-items: flex-end; /* end in the same direction (not bottom-right corner) */
+    align-items: center;
+
+    /* align content */
+    /* used only when items form multiple rows due to flex wrap */
+    align-content: stretch; /* default */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+
+    /* order */
+    /* items are ascendingly placed according to their order values */
+
+}
+
+span{
+    border: 2px solid black;
+    background-color: yellow;
+    font-size: 2rem;
+    margin: 0.1rem;
+}
+
+#I2{
+    /* align self */
+    /* works with align content doesn't hinder */
+    align-self: auto; /* parent's align items */
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+    align-self: baseline;
+    align-self: stretch;
+}
+
+.items{
+    /* flex grow */
+    flex-grow: 1; /* fills up empty spaces, equally by all items */
+    
+    /* margin manipulation */
+    margin: auto; /* horizontally/vertically centered */
+    margin: auto auto; /* horizontally/vertically centered */
+    margin-left: auto; /* moves right most of available space */
+    margin-right: auto; /* moves left most of available space */
+    margin-top: auto; /* moves bottom most of available space */
+    margin-bottom: auto; /* moves top most of available space */
+}
+
+#I1{
+    order: 1;
+    flex-grow: 4; /* four times the width of other flex items (relative to {flex flow = 1} as in common class) */
+}
+#I2{
+    order: 2;
+    flex-grow: 2;
+}
+#I3{
+    order: 30;
+    /* flex basis */
+    /* works like max-width, when used WITHOUT flex grow */
+    /* works like min-width, when used WITH flex grow */
+    flex-basis: 200px;
+}
+#I4{
+    order: -4;
+    /*flex shrink */
+    flex-shrink: 1; /*default ==> shrinks when container width/height < item width/height */
+    flex-shrink: 0; /* no shrinking (works when flex grow and flex basis don't hinder)*/
+    /* higher flex shrink value ==> faster shrink */
+}
+#I5{
+    order: 0;
+    /* shorthand */
+    flex : 0/*grow*/ 0/*shrink*/ 200px/*basis*/;
+    flex : 0/*grow*/ 0/*shrink*/ auto/*basis*/; /* auto = default */
+}
+
+/* form styling */
+#formList{
+    background-color: #eee;
+    padding: 40px;
+}
+#formList li{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+}
+#formList li label{
+    flex: 1;
+}
+#formList li input{
+    flex: 5;
+}

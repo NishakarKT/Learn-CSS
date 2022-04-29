@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: brown;
+    color: white;
+    width: 50vw;
+    height: fit-content;
+    font-size: 2vw;
+    border-radius: 25px;
+    padding: 1vh 2vw;
+    transition: all 1s ease-in-out;
+}
+.box:hover{
+    /* rotation */
+    transform: rotate3d(1,0,1, 70deg);
+    transform: rotate(20deg);
+    /* skew */
+    transform: skew(20deg);
+    /* scale */
+    transform: scale(1.05);
+    /* translate */
+    transform: translateZ(10px);
+    transform: translateX(30px);
+    transform: translateY(30px);
+    transform: translate(20px, 20px);
+}

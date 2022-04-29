@@ -1,0 +1,12 @@
+#firstPara {
+    font-size: 1.5rem;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+    column-count: 3; /* para divided into columns */
+    column-gap: 10rem; /* gap between columns */
+    column-width: 5rem; /* width of a column, adjusts accordingly the columns, if not defined previously */
+    column-rule: 2px solid black; /* lines just in between the columns (not the ends) */
+}

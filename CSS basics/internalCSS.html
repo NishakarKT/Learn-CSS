@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="keywords" content="html, web dev">
+    <meta name="description" content="this is description...">
+    <title>CSS basics</title>
+
+    <!-- CSS here has lesser priority than inline CSS -->
+    <style>
+        p {
+            color: black;
+            background-color: yellow !important;
+        }
+    </style>
+    <style>
+        p {
+            color: red !important;
+            background-color: blue;
+        }
+    </style>
+    <!-- "last"(at the end) written CSS instructions comes into effect -->
+    <!-- so we use "important" to give an instruction max priority -->
+</head>
+
+<body>
+    <!-- implementing CSS ==> style = "colour: red....", but this is not a good practice in big programs -->
+    <!-- inline CSS has highest priority -->
+    <p style="color: red; background-color: yellow;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+        dolores.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+</body>
+
+</html>

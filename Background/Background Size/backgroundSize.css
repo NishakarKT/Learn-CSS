@@ -1,0 +1,11 @@
+p{
+    background-image: url("https://images.unsplash.com/photo-1506480932912-dbbe35e3e516?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDU3fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-repeat: no-repeat;
+    /* background size */
+    background-size: auto /* default ==> original size */;
+    background-size: 150px /*X and Y*/;
+    background-size: 300px/*X*/ 500px/*Y*/;
+    background-size: 50%/*X*/ 20%/*Y*/;
+    background-size: cover; /* covers the whole of container */
+    background-size: contain; /* max-adjusts, maintaining original ratio */
+}

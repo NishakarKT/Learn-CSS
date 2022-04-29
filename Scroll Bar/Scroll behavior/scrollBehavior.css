@@ -1,0 +1,19 @@
+:is(#para1, #para2, #para3){
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* when we click on the anchor tag with link to internal paragraphs, the movement is rapid, so we need to smoothen it */
+html{
+    scroll-behavior: auto; /* default */
+    scroll-behavior: smooth;
+}
+/* to apply scroll behaviour on the whole document, we use the html tag */
+/* we can also smoothen the scroll in a container */
+
+#navBar{
+    position: sticky;
+    top: 0;
+}

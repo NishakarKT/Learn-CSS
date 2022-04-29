@@ -1,0 +1,42 @@
+#container{
+    display: grid;
+    width:fit-content;
+    margin: auto;
+    border: 2px solid black;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#container div{
+    width: fit-content;
+    margin: 2px;
+    font-size: 3rem;
+    background-color: yellow;
+    text-align: center;
+}
+
+#div1{
+    /* between row = 2(middle line) to row =3(last line) */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* shorthand row */ grid-row: 2 / 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* shorthand column */ grid-column: 1 / 2;
+    /* shorter hand */
+    grid-area: 2/*row-start*/ / 1/*column-start*/ / 3/*row-end*// 2/*column-end*/;
+}
+
+#div6{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#div2{
+    order: 3;
+}
+#div3{
+    order: 2;
+}
+/* they get placed at the end as all others have default values of order = 0 */

@@ -1,0 +1,6 @@
+p{
+    user-select: none; /* no select */
+    user-select: auto; 
+    user-select: text;
+    user-select: all; /* single-click => select all */
+}

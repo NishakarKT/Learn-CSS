@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+/* setting background */
+header::before{
+    background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+    content: ""; /* without content, you can't use after/before */
+    /* ----- important ----- */
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    /* --------------------- */
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navBar li {
+    color: black;
+    background-color: blanchedalmond;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+section h1 {
+    color: yellow;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section p {
+    width: 1000px;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+section::before {
+    /* inserting before */
+    content: "before content";
+}
+
+section:after {
+    /* inerting after */
+    content: "after content"
+}
+
+section p::first-letter {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+section p::first-line {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+section p::selection { /* on selection with mouse */
+    color: black;
+    background-color: gray;
+}
+
+input::placeholder{ /* when user types, these effects are gone */
+    color: white;
+    background-color: gray;
+}
+
+input[type="file"]::file-selector-button{
+    background-color: yellow;
+}

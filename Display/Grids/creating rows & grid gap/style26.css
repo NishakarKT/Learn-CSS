@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr; /* width for first 3 rows */
+    grid-auto-rows: 3fr; /* width for rest of the grid rows */
+    grid-template-columns:1fr 1fr 2fr;
+    grid-gap: 1rem;
+}
+.box{
+    background-color: teal;
+    border: 2px solid black;
+}

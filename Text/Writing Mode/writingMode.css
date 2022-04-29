@@ -1,0 +1,12 @@
+#firstPara{
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 2rem;
+    writing-mode: sideways-lr; /* supported only by firefox */
+    writing-mode: sideways-rl; /* supported only by firefox */
+    writing-mode: horizontal-tb; /* default */
+    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+}
